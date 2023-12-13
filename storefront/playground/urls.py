@@ -12,3 +12,4 @@ urlpatterns = [
 # 1. define a function in views that respond for endpoint request using httprequest object
 # 2. create a file that handle specific routnand call the function
 # 3. include the file into general url file using include. include takes url and file path.
+
