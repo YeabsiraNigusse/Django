@@ -6,5 +6,5 @@ from django.http import HttpResponse
 # define functions here 
 
 def hello(request):
-    return render(request, 'hello.html')
+    return HttpResponse('Hello World')
 

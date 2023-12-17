@@ -14,3 +14,16 @@ class Customer(models.Model):
     email = models.EmailField(max_length=254, unique=True)
     phone = models.CharField(max_length=255)
     birth_date = models.DateField(null=True)
+
+class Order(models.Model):
+    Pending_status = 'P'
+    Complete_status = 'C'
+    Failed_status = 'F'
+    status_choice = [
+        (Pending_status, 'Pending'),
+        (Complete_status, 'Complete'),
+        (Failed_status, 'Failed')
+    ]
+    palced_at = models.DateTimeField(auto_now_add=True)
+    payment_status = models.CharField(max_length=1, choices=status_choice, default=Pending_status)
+    
