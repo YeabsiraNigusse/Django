@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
-# helps to response for a request or it is just request hundler or action
-# define functions here 
+
+def say_hello(request):
+    return HttpResponse("This is my first response")
 
 def hello(request):
-    return HttpResponse('Hello World')
+    return render (request, "hello.html")
 
+
+# Create your views here.

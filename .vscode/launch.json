@@ -5,16 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Django",
-            "type": "python",
+            "name": "Python Debugger: Django",
+            "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}\\manage.py",
             "args": [
-                "runserver",
-                "9000"
+                "runserver"
             ],
-            "django": true,
-            "justMyCode": true
+            "django": true
         }
     ]
 }
